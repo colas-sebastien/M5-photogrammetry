@@ -283,9 +283,7 @@ void menu_photos_start_txt(uint8_t photo_id)
   ez.canvas.clear();
   ez.header.show("Photos");
   ez.canvas.lmargin(5);
-  ez.canvas.font(&FreeMono12pt7b);  
-  ez.canvas.println("");
-  ez.canvas.println("Photo:");
+  ez.canvas.font(&FreeMono12pt7b);
   ez.canvas.println("");  
   ez.canvas.println("current:");  
   ez.canvas.println(photo_id);
@@ -320,8 +318,12 @@ void menu_photos_start()
       if (photos_flucard)
       {
         m5photogrammetry.flucardShootToggle();
+      }      
+      if (current_photo<=nb_photos)
+      {
+        menu_photos_start_txt(current_photo);
       }
-      menu_photos_start_txt(current_photo++);     
+      current_photo++;      
     }
     m5photogrammetry.motorNextStep();
     delay(1);
@@ -522,7 +524,6 @@ void menu_photos_nb()
     }    
   }
 }
-
 
 void mainmenu_about() { 
   String s1=PHOTOGRAMMETRY_PROJECT;
