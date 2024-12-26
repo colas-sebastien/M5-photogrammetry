@@ -20,5 +20,26 @@ Here are the different parts of the project:
 # Software: Arduino code for M5Stack
 [![Arduino code for M5Stack](img/sofware.jpg)](software_M5Stack.md)
 
-# Conclusion
-![Project photo](img/example-01.jpg)
+# Software: Arduino code for M5StickC
+TODO
+
+# Photo shooting
+![Shooting](img/example-01.jpg)
+
+# Photogrammetry Software
+Thanks to the previous steps we can have multiple photos of different angles of the object we want to reconstruct. It is now time to reconstruct the 3D Model.
+![Photos](img/files.jpg)
+
+Multiple Photogrammetry are available:
+- [VisualSFM](http://ccwu.me/vsfm/)
+- [MeshRoom](https://github.com/alicevision/meshroom/)
+- [Regard3D](https://sourceforge.net/projects/regard3d/files/Regard3D/)
+
+## VisualSFM
+I created an installation script to Install [VisualSFM on Ubuntu 24.04](https://github.com/colas-sebastien/VisualSFM)
+![VisualSFM](img/VisualSFM_01.jpg)
+![VisualSFM](img/VisualSFM_02.jpg)
+
+# Meshing Software
+
+## MeshLab
